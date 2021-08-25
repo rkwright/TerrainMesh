@@ -7,23 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5581770426CF085A00C90709 /* GameLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5581770126CF085A00C90709 /* GameLevel.swift */; };
-		5581770626CF085A00C90709 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5581770326CF085A00C90709 /* GameViewController.swift */; };
-		5581770B26CF08FB00C90709 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5581770926CF08FB00C90709 /* AppDelegate.swift */; };
+		553424DA26D6BB750089F109 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553424D626D6BB750089F109 /* AppDelegate.swift */; };
+		553424DB26D6BB750089F109 /* SKScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553424D726D6BB750089F109 /* SKScene.swift */; };
+		553424DC26D6BB750089F109 /* BaseNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553424D826D6BB750089F109 /* BaseNode.swift */; };
+		553424DD26D6BB750089F109 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553424D926D6BB750089F109 /* ViewController.swift */; };
 		5581770C26CF08FB00C90709 /* RBTerrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5581770A26CF08FB00C90709 /* RBTerrain.swift */; };
-		5581770F26CF097A00C90709 /* RBPerlinNoiseGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5581770E26CF097A00C90709 /* RBPerlinNoiseGenerator.swift */; };
-		55F4F10226D00DD6001B0DA6 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F4F10126D00DD6001B0DA6 /* Player.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		550BD9DA26CEFB1E0063747C /* TerrainMesh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TerrainMesh.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		5581770126CF085A00C90709 /* GameLevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameLevel.swift; sourceTree = "<group>"; };
-		5581770326CF085A00C90709 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
-		5581770926CF08FB00C90709 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		553424D626D6BB750089F109 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		553424D726D6BB750089F109 /* SKScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKScene.swift; sourceTree = "<group>"; };
+		553424D826D6BB750089F109 /* BaseNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNode.swift; sourceTree = "<group>"; };
+		553424D926D6BB750089F109 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5581770A26CF08FB00C90709 /* RBTerrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RBTerrain.swift; sourceTree = "<group>"; };
-		5581770E26CF097A00C90709 /* RBPerlinNoiseGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RBPerlinNoiseGenerator.swift; sourceTree = "<group>"; };
 		5581771E26CF0EF700C90709 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		55F4F10126D00DD6001B0DA6 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,13 +54,12 @@
 		550BD9DC26CEFB1E0063747C /* TerrainMesh */ = {
 			isa = PBXGroup;
 			children = (
-				55F4F10126D00DD6001B0DA6 /* Player.swift */,
+				553424D626D6BB750089F109 /* AppDelegate.swift */,
+				553424D826D6BB750089F109 /* BaseNode.swift */,
+				553424D726D6BB750089F109 /* SKScene.swift */,
+				553424D926D6BB750089F109 /* ViewController.swift */,
 				5581771E26CF0EF700C90709 /* Info.plist */,
-				5581770E26CF097A00C90709 /* RBPerlinNoiseGenerator.swift */,
-				5581770926CF08FB00C90709 /* AppDelegate.swift */,
 				5581770A26CF08FB00C90709 /* RBTerrain.swift */,
-				5581770126CF085A00C90709 /* GameLevel.swift */,
-				5581770326CF085A00C90709 /* GameViewController.swift */,
 			);
 			path = TerrainMesh;
 			sourceTree = "<group>";
@@ -135,12 +132,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5581770B26CF08FB00C90709 /* AppDelegate.swift in Sources */,
-				5581770626CF085A00C90709 /* GameViewController.swift in Sources */,
-				5581770426CF085A00C90709 /* GameLevel.swift in Sources */,
+				553424DD26D6BB750089F109 /* ViewController.swift in Sources */,
+				553424DB26D6BB750089F109 /* SKScene.swift in Sources */,
+				553424DA26D6BB750089F109 /* AppDelegate.swift in Sources */,
+				553424DC26D6BB750089F109 /* BaseNode.swift in Sources */,
 				5581770C26CF08FB00C90709 /* RBTerrain.swift in Sources */,
-				55F4F10226D00DD6001B0DA6 /* Player.swift in Sources */,
-				5581770F26CF097A00C90709 /* RBPerlinNoiseGenerator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

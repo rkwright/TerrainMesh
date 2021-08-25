@@ -123,10 +123,10 @@ class RBTerrain: SCNNode {
 
         for y in 0...Int(h-2) {
             for x in 0...Int(w-1) {
-                let topLeftZ = valueFor(x: Int32(x), y: Int32(y+1)) / scale
-                let topRightZ = valueFor(x: Int32(x+1), y: Int32(y+1)) / scale
-                let bottomLeftZ = valueFor(x: Int32(x), y: Int32(y)) / scale
-                let bottomRightZ = valueFor(x: Int32(x+1), y: Int32(y)) / scale
+                let topLeftZ     = 0.0 // valueFor(x: Int32(x), y: Int32(y+1)) / scale
+                let topRightZ    = 0.0 // valueFor(x: Int32(x+1), y: Int32(y+1)) / scale
+                let bottomLeftZ  = 0.0 // valueFor(x: Int32(x), y: Int32(y)) / scale
+                let bottomRightZ = 0.0 // valueFor(x: Int32(x+1), y: Int32(y)) / scale
                 
                 let topLeft = SCNVector3Make(Float(x)-Float(factor), Float(topLeftZ), Float(y)+Float(factor))
                 let topRight = SCNVector3Make(Float(x)+Float(factor), Float(topRightZ), Float(y)+Float(factor))
