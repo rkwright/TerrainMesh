@@ -14,7 +14,7 @@ import SceneKit
 
 class Player : SCNNode {
     private let lookAtForwardPosition = SCNVector3Make(0.0, 0.0, 1.0)
-    private let cameraFowardPosition = SCNVector3(x: 0.8, y: 1, z: -0.5)
+    private let cameraFowardPosition = SCNVector3(x: 0.8, y: 50, z: -0.5)
 
     private var _lookAtNode: SCNNode?
     private var _cameraNode: SCNNode?
@@ -40,6 +40,13 @@ class Player : SCNNode {
         _lookAtNode!.position = lookAtForwardPosition
         addChildNode(_lookAtNode!)
 
+        // Debug sphere
+        let g = SCNSphere(radius: 1)
+        g.firstMaterial?.diffuse.contents = UIColor.blue
+        let node = SCNNode(geometry: g)
+        node.position = SCNVector3(x: 0, y: -2, z: 0)
+        addChildNode(node)
+        
         // Camera Node
         _cameraNode = SCNNode()
         _cameraNode!.camera = SCNCamera()
@@ -65,7 +72,7 @@ class Player : SCNNode {
         spotLightNode.position = SCNVector3(x: 1.0, y: 5.0, z: -2.0)
         self.addChildNode(spotLightNode)
 
-        // Linnk it
+        // Link it
         let constraint2 = SCNLookAtConstraint(target: self)
         constraint2.isGimbalLockEnabled = true
         spotLightNode.constraints = [constraint2]

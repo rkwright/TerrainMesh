@@ -31,9 +31,6 @@ class GameViewController: UIViewController {
         _sceneView.showsStatistics = true
         _sceneView.backgroundColor = UIColor.black
         _sceneView!.debugOptions = .showWireframe
-        _sceneView!.debugOptions = .showBoundingBoxes
-        _sceneView!.debugOptions = .showCameras
-        _sceneView!.debugOptions = .showSkeletons
         self.view = _sceneView
     }
 

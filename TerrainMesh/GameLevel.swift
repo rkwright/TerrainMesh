@@ -28,8 +28,10 @@ class GameLevel: SCNScene, SCNSceneRendererDelegate, SCNPhysicsContactDelegate {
         _player!.position = SCNVector3(160, 3, 0)
         self.rootNode.addChildNode(_player!)
 
-        let moveAction = SCNAction.moveBy(x: 0, y: 0, z: 200, duration: 20)
+        let moveAction = SCNAction.moveBy(x: 0, y: 0, z: 200, duration: 50)
         _player!.runAction(moveAction)
+        
+        dumpSCNNode(node: self.rootNode)
     }
 
     // -------------------------------------------------------------------------
@@ -81,5 +83,22 @@ class GameLevel: SCNScene, SCNSceneRendererDelegate, SCNPhysicsContactDelegate {
     }
     
     // -------------------------------------------------------------------------
+        
+    private func dumpSCNNode ( node: SCNNode ) {
+        
+        print("Node: ", node)
+        if let nom = node.name {
+            print("Name: " + nom)
+        }
+        else {
+            print("Unnamed")
+        }
+        
+        let count = node.childNodes.count
+        for i in 0..<count {
+            print("i: " , i )
+            dumpSCNNode(node: node.childNodes[i])
+        }
+    }
     
 }
